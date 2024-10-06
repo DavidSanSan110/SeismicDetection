@@ -1,1 +1,1 @@
-# SeismicDetection
+# NASA2024

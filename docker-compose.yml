@@ -1,0 +1,23 @@
+version: '3'
+services:
+
+  back:
+    build: 
+      context: ./back
+    container_name: backcontainer
+
+  front:
+    build: 
+      context: ./front
+    container_name: frontcontainer
+    ports:
+      - "80:80"
+
+  detector:
+    build: ./detector
+    container_name: detectorcontainer
+
+  satellite:
+    build: 
+      context: ./satellite
+    container_name: satellitecontainer
